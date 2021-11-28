@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Helmate"
+    tools:context=".BrowseMenue">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="146dp"
+        android:layout_height="159dp"
+        android:src="@drawable/fd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Browse Your Menu"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/To_Appetizer_Button"
+        android:layout_width="268dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="432dp"
+        android:background="@color/Ash"
+        android:onClick="ToAppetizer"
+        android:text="Appetizer"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/MainCourseButton"
+        android:layout_width="268dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="352dp"
+        android:background="@color/Ash"
+        android:onClick="ToMainCourse"
+        android:text="Main Course"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/DessertButton"
+        android:layout_width="268dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="264dp"
+        android:background="@color/Ash"
+        android:onClick="ToDessert"
+        android:text="Dessert"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/DrinksButton"
+        android:layout_width="268dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="172dp"
+        android:background="@color/Ash"
+        android:onClick="ToDrinks"
+        android:text="Drinks"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="95dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="68dp"
+        android:background="@color/Ash"
+        android:text="Back"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DrinksButton" />
+
+    <Button
+        android:id="@+id/go_to_receipt_btn"
+        android:layout_width="95dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="76dp"
+        android:background="@color/Ash"
+        android:onClick="ToReceipt"
+        android:text="receipt"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DrinksButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
